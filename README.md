@@ -1,65 +1,101 @@
-# 图片文件夹分割说明
+# Try Medical Supplies Company 官网
 
-这个文件夹包含了原始 `web/images` 文件夹的分割版本，每个子文件夹大小都控制在25MB以内，以便上传到GitHub。
+这是一个专业的医疗器械出口公司官网，采用现代化的响应式设计，支持多语言和多设备访问。
 
-## 文件夹结构
+## 功能特点
 
-- `images_part_01/` - 82.59MB (1个文件)
-  - hero-1.png (超大文件，单独存放)
+- 🎯 **响应式设计** - 支持桌面、平板和手机设备
+- 🖼️ **轮播图展示** - 首页轮播图展示公司形象和产品
+- 💬 **留言板功能** - 客户可以留下咨询和反馈
+- 🔍 **产品搜索** - 支持产品分类和关键词搜索
+- 📱 **移动端优化** - 完美适配各种移动设备
+- 🎨 **现代化UI** - 使用Bootstrap 5和Font Awesome图标
 
-- `images_part_02/` - 23.09MB (1个文件)
-  - medical-gauze-pads-3.png
+## 页面结构
 
-- `images_part_03/` - 22.43MB (1个文件)
-  - hero-2.png
+```
+web/
+├── index.html              # 首页
+├── css/
+│   └── style.css          # 主要样式文件
+├── js/
+│   └── main.js            # 主要JavaScript功能
+├── components/
+│   ├── navbar.html        # 导航栏组件
+│   └── footer.html        # 页脚组件
+├── pages/
+│   ├── about.html         # 关于我们
+│   ├── products.html      # 产品展示
+│   ├── services.html      # 服务优势
+│   ├── contact.html       # 联系我们
+│   └── message-board.html # 留言板
+└── images/                # 图片文件夹
+```
 
-- `images_part_04/` - 13.04MB (1个文件)
-  - medical-surgical-packs.png
+## 需要的图片文件
 
-- `images_part_05/` - 13.04MB (1个文件)
-  - medical-dressing.png
+请将以下图片文件放入 `web/images/` 文件夹中：
 
-- `images_part_06/` - 23.86MB (2个文件)
-  - disposable-dental-packs.png
-  - medical-gauze-pads-2.png
+### 首页轮播图
+- `hero-1.jpg` - 医疗器械出口主题图片
+- `hero-2.jpg` - 品质保证主题图片  
+- `hero-3.jpg` - 一站式服务主题图片
 
-- `images_part_07/` - 18.41MB (14个文件)
-  - about-company.png
-  - factory-1.png
-  - factory-2.png
-  - factory-3.png
-  - factory-4.png
-  - factory-5.png
-  - hero-3.png
-  - location-map .png
-  - medical-bandages.png
-  - medical-gauze-balls.png
-  - medical-gauze-pads-1.png
-  - medical-gauze-pads-thick.png
-  - medical-surgical-pack.png
-  - placeholder.html
+### 公司介绍图片
+- `about-company.jpg` - 公司简介配图
+
+### 产品图片
+- `product-1.jpg` - 医用外科口罩
+- `product-2.jpg` - 一次性医用手套
+- `product-3.jpg` - 医用防护服
+- `product-4.jpg` - 红外线体温计
+- `product-5.jpg` - 电子血压计
+- `product-6.jpg` - 脉搏血氧仪
+- `product-7.jpg` - 医用雾化器
+- `product-8.jpg` - 低频理疗仪
+- `product-9.jpg` - 一次性手术刀
+- `product-10.jpg` - 可调节助行器
+
+### 其他图片
+- `logo.png` - 公司logo（建议尺寸：200x80px）
+
+## 图片要求
+
+- **格式**: JPG、PNG、WebP
+- **尺寸**: 
+  - 轮播图: 1920x600px (推荐)
+  - 产品图: 400x300px (推荐)
+  - 其他图片: 根据实际需要调整
+- **质量**: 高清图片，文件大小建议控制在500KB以内
+- **内容**: 医疗器械相关的高质量图片，体现专业性
 
 ## 使用方法
 
-1. 将每个 `images_part_XX` 文件夹分别上传到GitHub仓库
-2. 在您的项目中，可以按需下载特定的图片文件夹
-3. 如果需要完整恢复原始结构，可以将所有子文件夹的内容合并到一个 `images` 文件夹中
+1. **本地预览**: 直接在浏览器中打开 `index.html` 文件
+2. **部署到服务器**: 将整个 `web` 文件夹上传到您的网站服务器
+3. **自定义内容**: 修改HTML文件中的文字内容和图片链接
+4. **样式调整**: 修改 `css/style.css` 文件来自定义样式
 
-## 注意事项
+## 技术特点
 
-- `hero-1.png` 文件大小为82.59MB，超过了GitHub的单文件100MB限制，建议使用Git LFS或压缩后上传
-- 所有其他文件夹都控制在25MB以内，可以直接上传到GitHub
-- 文件名中的空格已保留，请注意处理
+- **前端框架**: Bootstrap 5.3.0
+- **图标库**: Font Awesome 6.0.0
+- **响应式**: 移动优先的设计理念
+- **组件化**: 导航栏和页脚可复用
+- **交互功能**: JavaScript实现的动态功能
+- **表单验证**: 完整的表单验证和提交功能
 
-## 恢复原始结构
+## 浏览器兼容性
 
-如果需要恢复原始的 `images` 文件夹结构，可以运行以下命令：
+- Chrome 90+
+- Firefox 88+
+- Safari 14+
+- Edge 90+
 
-```bash
-# 在web目录下运行
-cd web
-mkdir -p images_backup
-for dir in images_split/images_part_*; do
-    cp "$dir"/* images_backup/
-done
-```
+## 联系方式
+
+如有技术问题或需要定制开发，请联系开发团队。
+
+---
+
+**注意**: 请确保所有图片都拥有合法的使用权限，避免版权问题。
